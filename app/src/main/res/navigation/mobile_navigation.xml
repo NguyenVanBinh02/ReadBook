@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/Home">
+
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.nvb.appsach.HomeFragment"
+        android:label="Trang chủ"
+        tools:layout="@layout/homefragment" />
+
+    <fragment
+        android:id="@+id/Noibat"
+        android:name="com.nvb.appsach.NoibatFragment"
+        android:label="Nổi bật"
+        tools:layout="@layout/noibatfragment" />
+
+    <fragment
+        android:id="@+id/Theloai"
+        android:name="com.nvb.appsach.TheloaiFragment"
+        android:label="Thể loại"
+        tools:layout="@layout/theloaifragment" />
+    <fragment
+        android:id="@+id/Setting"
+        android:name="com.nvb.appsach.SettingFragment"
+        android:label="Cài đặt"
+        tools:layout="@layout/settingfragment" />
+</navigation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Home"
+            android:title="Trang chủ"
+            android:icon="@drawable/ic_baseline_home">
+        </item>
+        <item android:id="@+id/Noibat"
+            android:title="Nổi bật"
+            android:icon="@drawable/ic_baseline_grade">
+        </item>
+        <item android:id="@+id/Theloai"
+            android:title="Thể loại"
+            android:icon="@drawable/ic_baseline_format">
+        </item>
+        <item android:id="@+id/Setting"
+            android:title="Cài đặt"
+            android:icon="@drawable/ic_baseline_settings">
+        </item>
+
+    </group>
+    <item android:title="Thư viện">
+        <menu>
+            <item android:id="@+id/Lichsu"
+                android:title="Lịch sử"
+                android:icon="@drawable/ic_baseline_restore">
+            </item>
+            <item android:id="@+id/Download"
+                android:title="Tải về"
+                android:icon="@drawable/ic_baseline_get_app">
+            </item>
+        </menu>
+    </item>
+</menu>
