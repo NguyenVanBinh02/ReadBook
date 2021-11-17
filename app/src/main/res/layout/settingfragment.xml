@@ -3,17 +3,117 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#388E3C">
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Cai dat..................."
-        android:textSize="30sp"
-        android:textColor="#fff">
+    android:layout_margin="4dp">
 
-    </TextView>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:padding="8dp"
+        android:text="Cài đặt"
+        android:layout_marginBottom="4dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Dulieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="#DC8787"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="Dữ liệu"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TableLayout
+        android:id="@+id/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Dulieu"
+        >
+        <TableRow>
+            <TextView
+                android:padding="10dp"
+                android:text="Cache"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:fontFamily="monospace"></TextView>
+            <Button
+                android:id="@+id/Xoa"
+                android:backgroundTint="#ccc"
+                android:text="Xóa"
+                android:textColor="#000"></Button>
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="246dp"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="Dữ liệu ứng dụng"
+                android:textColor="#000"
+                android:textSize="16sp"></TextView>
+
+            <Button
+                android:id="@+id/Xoa1"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#ccc"
+                android:text="Xóa"
+                android:textColor="#000"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Giaodien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Body"
+
+        android:background="#DC8787"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="Giao diện"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <TableLayout
+        android:id="@+id/Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Giaodien"
+        android:padding="8dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="242dp"
+                android:layout_marginLeft="-10dp"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="Chế độ màn hình tối"
+                android:textColor="#000"
+                android:textSize="16sp"></TextView>
+
+            <Switch
+                android:id="@+id/Battat"
+                android:checked="false"
+                android:layout_width="86dp"
+                android:layout_height="42dp"
+                android:padding="10dp" />
+        </TableRow>
+
+    </TableLayout>
+
 
 
 
